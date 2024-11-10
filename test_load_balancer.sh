@@ -8,7 +8,7 @@ URL="http://localhost:3000"
 
 # Loop to send Requests
 for ((i = 1; i <= REQUESTS; i++)); do
-    curl $URL &
+    curl $URL; printf "\n"
 done
 
 wait 
